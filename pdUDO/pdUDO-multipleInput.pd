@@ -1,17 +1,17 @@
-#N canvas 142 294 274 307 10;
+#N canvas 154 503 274 307 10;
 #X obj 13 254 dac~;
 #X obj 13 -14 vsl 15 128 0 880 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4200 1;
+-1 -1 6700 1;
 #X msg 38 196 reset;
 #X obj 38 160 loadbang;
 #X floatatom 13 121 5 0 0 0 - - -;
 #X obj 141 -14 vsl 15 128 0 880 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 5800 1;
+-1 -1 5400 1;
 #X floatatom 141 121 5 0 0 0 - - -;
 #X msg 141 139 control pdInput2 \$1;
 #X msg 13 139 control pdInput1 \$1;
 #X msg 80 196 set pdInput1 pdInput2;
-#X obj 13 223 csoundapi~ pdUDO2x.csd;
+#X obj 13 223 csoundapi~ pdUDO-multipleInput.csd;
 #X connect 1 0 4 0;
 #X connect 2 0 10 0;
 #X connect 3 0 9 0;
