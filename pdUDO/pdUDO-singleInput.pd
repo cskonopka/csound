@@ -1,0 +1,19 @@
+#N canvas 308 201 186 403 10;
+#X obj 13 254 dac~;
+#X obj 13 -14 vsl 15 128 0 880 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 7200 1;
+#X msg 38 196 reset;
+#X obj 13 223 csoundapi~ PDudo.csd;
+#X obj 38 160 loadbang;
+#X msg 13 139 control pdInput \$1;
+#X msg 80 196 set pdInput;
+#X floatatom 13 121 5 0 0 0 - - -;
+#X connect 1 0 7 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 3 1 0 1;
+#X connect 4 0 6 0;
+#X connect 4 0 2 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 5 0;
