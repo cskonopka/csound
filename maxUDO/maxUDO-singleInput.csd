@@ -17,7 +17,6 @@ kParm1 	invalue 	Sname1
 
 		xout 		kParm1
 endop
- 
 
 instr 1
 
@@ -32,7 +31,7 @@ endin
 
 f 1 0 16384 10 1
 
-i1 0 $INF
+i1 0 60000
 
 </CsScore>
 </CsoundSynthesizer>
